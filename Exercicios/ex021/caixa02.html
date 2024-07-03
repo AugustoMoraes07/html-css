@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        header{
+            background-color: white;
+        padding: 5px;
+        }
+
+        header>h1{
+            font-weight: bolder;
+            text-align: center;
+        }
+    
+        nav{
+        background-color: gray;
+        padding: 3px;
+        }
+        nav >a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(75, 75, 75, 0.712);
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(153, 149, 149);
+        }
+        footer{
+            background-color: black;
+            color: whitesmoke;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            padding: 4px;
+            margin: 0px -8px;
+
+        }
+        footer > p{
+            margin: 0px;
+        }
+        
+         
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="a">Link</a>
+            <a href="a">Link</a>
+            <a href="a">Link</a>
+            <a href="a">Link</a>
+
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"></section>
+        <section id="noticias">
+            <article>
+            <h2>Noticias do Brasil</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et maxime est odio at dignissimos? Alias nobis vel ratione libero incidunt, a distinctio consectetur qui culpa quam explicabo? Voluptatum, soluta asperiores?</p>
+            <aside>
+                <p>Artigo feito por Pedro</p>
+            </aside>   
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo @moraesmf</p>
+    </footer>
+</body>
+</html>

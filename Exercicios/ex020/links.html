@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold ;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black ;
+            text-decoration: underline;
+        }
+        a:active{
+            color: rgba(255, 0, 0, 0.452);
+        }
+        .importante{
+            background-color: rgba(255, 0, 0, 0.11);
+        }
+        .importante:active {
+            color: darkgray;
+        }
+        .importante:hover{
+            color: darkgray;
+        }
+        .importante::after{
+            content: '[link]';
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Af080324" target="_blank" rel="external">Meu GitHub</a></li>
+        <li><a href="https://www.youtube.com/@moraesfps01" target="_blank" rel="external" class="importante">Canal do Youtube</a></li>
+        <li><a href="https://www.linkedin.com/in/moraesmf01/" target="_blank" rel="external" class="importante">Perfil Linkedin</a></li>
+    </ul>
+</body>
+</html>
