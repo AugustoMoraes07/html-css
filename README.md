@@ -1,4 +1,4 @@
 # html-css
- Curso de HTML5 e CSS do Curso em vídeo
+ Curso de HTML5 e CSS do CursoemVídeo.
 
- Estou aprendendo a utilizar também o Git e GitHub!
+ Estou aprendendo a utilizar também o Git e GitHub.
