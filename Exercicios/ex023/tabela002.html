@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table{
+        max-width: 800px;
+        height: 500px;
+        margin: auto;
+
+        border-collapse: collapse;
+    }
+
+    table>thead {
+        height: 100px;
+        background-color: rgb(117, 117, 117);
+        color: white;
+    }
+
+    td, th{
+        padding: 10px;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    .população{
+        text-align: right;
+    }
+
+    .unidadef{
+        text-align: left;
+    }
+</style>
+
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+               <th>Posição</th>
+                <th>Unidade federativa</th>
+                <th>População (Censo de 2022)</th>
+                <th>População (Censo de 2010)</th>
+                <th>Mudança</th>
+                <th>% da pop. total</th>
+                <th>
+                    País comparável
+                    (habitantes)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="unidadef">São Paulo</td>
+                <td class="população">44 411 238</td>
+                <td class="população">41 262 199</td>
+                <td>+7.63%</td>
+                <td>21,88%</td>
+                <td>Argentina 
+                (46 621 847)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="unidadef">Minas Gerais</td>
+                <td class="população">20 538 718</td>
+                <td class="população">19 597 330</td>
+                <td>+4.81%</td>
+                <td>10,11%</td>
+                <td>Burquina Fasso
+                (20 903 273)</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="unidadef">Rio de Janeiro</td>
+                <td class="população">16 054 524</td>
+                <td class="população">15 989 929</td>
+                <td>+0.40%</td>
+                <td>7,91%</td>
+                <td>Camboja
+                (16 718 965)</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="unidadef">Bahia</td>
+                <td class="população">14 141 626</td>
+                <td class="população">14 016 906</td>
+                <td>+0.89%</td>
+                <td>6,96%</td>
+                <td>Zimbabwe
+                (14 862 924)</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="unidadef">Paraná</td>
+                <td class="população">11 444 380</td>
+                <td class="população">10 444 526</td>
+                <td>+9.57%</td>
+                <td>5,64%</td>
+                <td>Tunísia
+                     (11 818 619)</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+</body>
+</html>
