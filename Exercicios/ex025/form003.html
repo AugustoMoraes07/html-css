@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body>p#ipesquisa{
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"></form>
+
+    <p>
+        <input type="search" name="pesquisa" id="ipesquisa" placeholder="Pesquisar">
+    </p>
+    <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" required placeholder="Nome completo" autocomplete="name" value="Augusto">
+    </p>
+    <p>
+        <label for="inumber">Média</label>
+        <input type="number" name="number" id="inumber" min="0" max="10" placeholder="0 a 10" step="0.5" value="6" required>
+    </p>
+    <p>
+        <label for="imes">Período Letivo</label>
+        <input type="month" name="mes" id="imes" value="2024-02" required>
+    </p>
+    <p>
+        <label for="idia">Dia da Prova</label>
+        <input type="date" name="Dia" id="idia"  value="2024-02-01">
+    </p>
+    <p>
+        <label for="itime">Horário da Prova</label>
+        <input type="time" name="time" id="itime" value="07:00">
+
+    </p>
+    <p>
+        <label for="iemail">Email</label>
+        <input type="email" name="email" id="iemail" required autocomplete="email">
+    </p>
+
+    <p>
+        <label for="icheck">Quero que enviem os dados para meu email</label>
+        <input type="checkbox" name="check" id="icheck">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar" >
+    </p>
+</body>
+</html>
