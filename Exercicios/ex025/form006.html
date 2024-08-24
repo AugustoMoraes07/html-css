@@ -8,23 +8,28 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="icolor">Cor:</label>
-            <input type="color" name="color" id="icolor" value="#ffffff">
-        </p>
-        <p>
-            <label for="inivel">Nível de Satisfação:</label>
-            <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
-        </p>
-        <p>
-            <label for="ifile">Mandar Arquivos</label>
-            <input type="file" name="file" id="ifile">
-        </p>
+        <fieldset>
+            <legend>Pesquisa Online</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="Nome" id="inome" required>
+            </p>
+            <p>Idade:
+                <input type="radio" name="idad" id="idade1"> <label for="idade1">14 a 18</label>
+                <input type="radio" name="idad" id="idade2"><label for="idade2">19 a 44</label>
+                <input type="radio" name="idad" id="idade3"> <label for="idade3">45+</label>
+            </p>
+            <p><label for="inivel">Nivel de Satisfação:</label>
+                <input type="range" name="Nivel" id="inivel" min="1" max="10" required>
 
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+            </p>
+
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>
 
 </body>
