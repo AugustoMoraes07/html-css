@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="get">
+        <p>
+            <label for="ibrilho">Brilho</label>
+            <input type="range" name="brilho" id="ibrilho" required value="5" min="0" max="10" oninput="val.innerHTML = Number(ibrilho.value)">
+            <output id="val">5</output>
+        </p>
+
+    </form>
+</body>
+</html>
