@@ -15,8 +15,7 @@ html{
 }
 
 body{
-    background: black url(../imagens/back-phone.jpg) no-repeat;
-    background-position: center;
+    background: black url(../imagens/back-phone.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -25,7 +24,7 @@ main{
     margin: auto;
     margin-top: 20px;
     width: 400px;
-    height: 80vw;
+    height: max-content;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
@@ -38,10 +37,13 @@ h1{
     padding: 10px;
 }
 
-img#phone{ 
-    display: block;
+main>img{
     margin: auto;
     margin-top: 100px;
+}
+
+img#phone{ 
+    display: block;
 }
 img#tablet{ display: none;}
 img#print{ display: none;}
