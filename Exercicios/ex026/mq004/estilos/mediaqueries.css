@@ -2,40 +2,63 @@
 
 /* Outros dispositivos */
 
-@media screen and (min-width: 800px) {
-    img#tablet{display: block;}
-    img#phone{display: none;}
-    
+/* TYPICAL DEVICES BREAKPOINTS
+    Pequenas Telas: até 600px
+    Smartphones: 600px até 768px
+    Tablets: 768px: até 992px
+    Desktop: 992px: até 1200px
+    Grandes Telas: 1200px e acima*/
+
+@media screen and (min-width:768px) and (max-width:992px){
     body{
-        background: url(../imagens/back-tablet.jpg) center center no-repeat;
-        background-size: cover;
+        background-image: url(../imagens/back-tablet.jpg);
     }
+    
+    img#phone{ display: none;}
+    img#tablet{ display: block;}
+    img#print{ display: none;}
+    img#desktop{ display: none;}
+    img#tv{ display: none;}
 }
 
-@media screen and (min-width: 900px){
-
-    img#print{display: block;}
-    img#tablet{display: none;}
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{background-image: url(../imagens/back-pc.jpg);}
     
-    body{
-        background: url(../imagens/back-print.jpg) center center no-repeat;
-        background-size: cover;
-        
-    }
-}
-
-@media screen and (min-width: 1000px) {
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
     img#print{ display: none;}
     img#desktop{ display: block;}
-
-    body{background: url(../imagens/back-pc.jpg) center center no-repeat;
-    background-size: cover;}
+    img#tv{ display: none;}
 }
 
-@media screen and (min-width: 1100px) {
-    img#desktop{ display:none}
+@media screen and (min-width: 1200px) {
+    body{background-image: url(../imagens/back-tv.jpg);}
+    
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#desktop{ display: none;}
     img#tv{ display: block;}
+}
 
-    body{background: url(../imagens/back-tv.jpg) center center no-repeat;
-        background-size: cover;}
+@media print {
+    *{font-family: 'Courier New', Courier, monospace;
+    }
+    body{background-image: url(../imagens/back-print.jpg);}
+    main{
+        border: 2px solid black;
+        width: 90vw;
+        text-align: center;
+    }
+    h1{
+        color: black;
+        text-shadow: none;
+    }
+    main::after{content: 'Impressão feita por augustomoraes07.github.io';}
+    
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: block;}
+    img#desktop{ display: none;}
+    img#tv{ display: none;}
 }
