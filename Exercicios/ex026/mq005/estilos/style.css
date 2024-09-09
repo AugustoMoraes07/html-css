@@ -35,10 +35,10 @@ menu{
     border: 1px solid gray;
 }
 menu>ul>li{
-    padding: 15px;
-    border: 1px solid gray;
     list-style-type: none;
+    border: 1px solid gray;
     display: block;
+    padding: 10px;
 }
 menu>ul>li:hover{
     background-color: darkgray;
