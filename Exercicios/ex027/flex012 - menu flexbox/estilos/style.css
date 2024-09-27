@@ -23,15 +23,16 @@ header{
 }
 
 header>h1{
-    flex: none;
+    flex: 0 0 200px;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.658);
+    text-align: center;
 }
 
 header>nav{
-    flex: initial;
-
     display: flex;
+    flex-flow: row nowrap;
+
 }
 
 header>nav> a{ 
@@ -74,16 +75,17 @@ main>p{
 
     header>h1{
         text-align: center;
+        flex: 0 0 50px;
     }
 
-    nav{
+    header>nav{
 
     
         flex-flow: column nowrap;
         align-items: stretch;
     }
 
-    nav>a{
+    header>nav>a{
         text-align: center;
     }
     
